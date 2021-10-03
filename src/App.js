@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-
+import {useState,useEffect} from 'react'
 function App() {
+
+  const[sum,setSum]=useState({
+    firstValue:null,
+    secondValue:null
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App" style={{display:'flex', gap:5}}>
+    <input type="text" value={sum.firstValue} onChange={(e)=>setSum({...sum,firstValue:Number(e.target.value)})} />
+     +
+    <input type="text" value={sum.secondValue} onChange={(e)=>setSum({...sum,secondValue:Number(e.target.value)})} />
+     =
+     {sum.firstValue!=null &&sum.secondValue!=null?
+     <>{sum.firstValue+sum.secondValue}</>
+     :""
+     }
+   </div>
   );
 }
 
