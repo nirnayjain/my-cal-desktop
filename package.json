@@ -21,6 +21,10 @@
     "concurrently": "^6.3.0"
   },
   "main": "public/electron.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nirnayjain/myCalculator"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
