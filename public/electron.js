@@ -1,5 +1,6 @@
 const electron = require('electron');
 const app = electron.app;
+require('update-electron-app')()
 const BrowserWindow = electron.BrowserWindow;
 
 const path = require('path');
