@@ -9,6 +9,7 @@ function App() {
   })
 
   return (
+    <>
     <div className="App" style={{display:'flex', gap:5}}>
     <input type="number" value={sum.firstValue} onChange={(e)=>setSum({...sum,firstValue:Number(e.target.value)})} />
      +
@@ -18,7 +19,14 @@ function App() {
      <>{sum.firstValue+sum.secondValue}</>
      :""
      }
+
+
+
    </div>
+    <div>
+    This is new update
+    </div>
+    </>
   );
 }
 
