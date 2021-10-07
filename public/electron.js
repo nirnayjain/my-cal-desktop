@@ -1,6 +1,6 @@
 const electron = require('electron');
 const app = electron.app;
-import { autoUpdater } from 'electron-updater'
+const { autoUpdater } =require('electron-updater')
 const BrowserWindow = electron.BrowserWindow;
 
 const path = require('path');
