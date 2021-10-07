@@ -24,7 +24,7 @@ function App() {
 
    </div>
     <div>
-    This is new update
+    This is new update and hi
     </div>
     </>
   );
