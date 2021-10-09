@@ -33,6 +33,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "publish": "build --mac --win -p always",
     "eject": "react-scripts eject",
     "electron-react": "concurrently \"SET BROWSER=none && npm start\" \"wait-on http://localhost:3000 && electron .\"",
     "electron-pack": "electron-builder",
